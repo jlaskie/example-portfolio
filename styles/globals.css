@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    /* html {
-        @apply flex mx-8
-    } */
-/* try to import the fonts here in {} and have the fontfamily = {inter.fontfamily etc */
-
-
     body {
         @apply bg-gradient-to-r from-[#080344] via-[#0E0946] to-[#080344] text-neutral-200 text-opacity-[0.925] 
     }
-    /* I could remove those (h4 and p) and just put them straight in at the component level if needed*/
+
+    /* could have these at component level instead */
     h1 {
         @apply text-5xl
     }
@@ -38,19 +33,5 @@
 }
 
 
-/*
-add custom css if you need a specific angle for the gradient that isn't 180 (horizontal), 90 vertical etc
-
-body {
-    background: linear-gradient(180deg, #080344 0%, #080344 0.01%, #0E0946 52.08%, #080344 100%);
-} 
-logo intitial full name and contact title 
-background: linear-gradient(89.98deg, rgba(118, 237, 237, 0.9) 3.22%, rgba(81, 0, 252, 0.9) 90.64%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-
-**text-fill-color: transparent;**
-*/
 
 
