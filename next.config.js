@@ -14,8 +14,6 @@ module.exports = {
   }
 };
 
-// double check and edit all of the values below
-
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
