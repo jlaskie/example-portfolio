@@ -70,10 +70,11 @@ export default function Contact({title, firstPara, secondPara, email}) {
               alt="woman drinks tea"
               height={302}
               width={235}
+              priority
             />
           </div>
           <div className="hidden lg:flex">
-            <Image src={profileImg} alt="woman drinks tea" />
+            <Image src={profileImg} alt="woman drinks tea"/>
           </div>
         </div>
       </div>

@@ -21,6 +21,8 @@ const ContentSecurityPolicy = `
     child-src *.youtube.com *.google.com;
     style-src 'self' 'unsafe-inline' ;
     img-src 'self';
+    object-src 'none';
+    base-uri 'none';
     media-src 'none';
     connect-src *;
     font-src 'self';

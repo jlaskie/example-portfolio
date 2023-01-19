@@ -128,9 +128,9 @@ export default function Home() {
         </section>
       </main>
       <footer className={inter.className}>
-        <h4 className="text-center mt-10 mb-4 text-xs">
+        <h2 className="text-center mt-10 mb-4 text-xs">
           Copyright 2022 Your Name
-        </h4>
+        </h2> 
       </footer>
     </div>
   );
