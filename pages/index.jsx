@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <header>
-          <Nav logo="YN" />   
+        <Nav logo="YN" />
       </header>
       <main className={inter.className}>
         <section className="intro">
@@ -100,27 +100,31 @@ export default function Home() {
           </section>
           <section className="project-three">
             <div className="md:mt-20 md:mb-20 md lg:grid lg:grid-cols-1 lg:mb-40">
-              <div className="bg-[url('/images/projects-img/big-pexels-conference-image.png')] bg-center grid grid-cols-1 mt-11 mb-11 md:h-[49.25rem] lg:h-[49.25rem] lg:w-[72rem] lg:ml-6 lg:justify-self-center lg:rounded-md" aria-label="background image of an audotorium filled with business people">
+              <div
+                className="bg-[url('/images/projects-img/big-pexels-conference-image.webp')] bg-[url('/images/projects-img/big-pexels-conference-image.png')]  bg-center grid grid-cols-1 mt-11 mb-11 md:h-[49.25rem] lg:w-[72rem] lg:ml-6 lg:justify-self-center lg:rounded-md"
+                loading="lazy"
+                aria-label="background image of an audotorium filled with business people"
+              >
                 <div className="bg-black rounded-[1rem] px-6 bg-opacity-[55%] py-20 lg:rounded-sm">
-                  <div className="grid grid-flow-row justify-items-center">  
-                      <Projects
-                        title="Project 3"
-                        date="Dec 2020"
-                        info="Lorem ipsum dolor sit amet consectetur. A posuere in senectus urna diam egestas nisl est malesuada."
-                      />
+                  <div className="grid grid-flow-row justify-items-center">
+                    <Projects
+                      title="Project 3"
+                      date="Dec 2020"
+                      info="Lorem ipsum dolor sit amet consectetur. A posuere in senectus urna diam egestas nisl est malesuada."
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </section>
         </section>
-        <section className="contact" id="contact-me">     
-            <Contact
-              title="Contact"
-              firstPara="Interested in creating a new project with me?"
-              secondPara="You can contact me on any social media platform or send me an email at "
-              email="yourname@email.com"
-            />
+        <section className="contact" id="contact-me">
+          <Contact
+            title="Contact"
+            firstPara="Interested in creating a new project with me?"
+            secondPara="You can contact me on any social media platform or send me an email at "
+            email="yourname@email.com"
+          />
         </section>
       </main>
       <footer className={inter.className}>
