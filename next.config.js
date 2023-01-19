@@ -21,8 +21,8 @@ const ContentSecurityPolicy = `
     default-src 'self';
     script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com;
     child-src *.youtube.com *.google.com *.twitter.com;
-    style-src 'self' 'unsafe-inline' *.googleapis.com;
-    img-src * blob: data:;
+    style-src 'self' 'unsafe-inline' ;
+    img-src 'self';
     media-src 'none';
     connect-src *;
     font-src 'self';
@@ -35,9 +35,10 @@ const securityHeaders = [
     value: ContentSecurityPolicy.replace(/\n/g, '')
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+  // https://scotthelme.co.uk/a-new-security-header-referrer-policy/
   {
     key: 'Referrer-Policy',
-    value: 'origin-when-cross-origin'
+    value: 'strict-origin-when-cross-origin'
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {
@@ -63,7 +64,11 @@ const securityHeaders = [
   {
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=()'
-  }
+  },
+  {
+  key: 'X-XSS-Protection',
+  value: '1; mode=block'
+}
 ];
 //const securityHeaders = []
 /*
