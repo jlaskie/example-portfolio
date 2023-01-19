@@ -19,8 +19,8 @@ module.exports = {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com;
-    child-src *.youtube.com *.google.com *.twitter.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com;
+    child-src *.youtube.com *.google.com;
     style-src 'self' 'unsafe-inline' ;
     img-src 'self';
     media-src 'none';
@@ -64,39 +64,7 @@ const securityHeaders = [
   {
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=()'
-  },
-  {
-  key: 'X-XSS-Protection',
-  value: '1; mode=block'
-}
+  }
 ];
-//const securityHeaders = []
-/*
-module.exports = {
-  async headers() {
-    return [
-      {
-        // Apply these headers to all routes in your application.
-        source: '/:path*',
-        headers: [{
-  key: 'X-DNS-Prefetch-Control',
-  value: 'on'
-}, {
-  key: 'X-Frame-Options',
-  value: 'SAMEORIGIN'
-}
-// delete all of the above and copy what leerob.io did on github
-// also try to load next fonts in here
-]
-      },
-    ]
-  },
-}*/
-
-// use x-content type, content-security-policy (self and youtube probably since your content is coming from youtube, probably fonts too,), xframe options - sameorigin, http strict transport?, permissions policy deny for all, referrer policy is needed-origin when cross origin
-
 
 module.exports = nextConfig
-
-
-// imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
