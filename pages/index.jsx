@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], fallback: ["arial"] });
 export default function Home() {
   return (
     <div>
-      <header className={inter.className}>
+      <header>
           <Nav logo="YN" />   
       </header>
       <main className={inter.className}>

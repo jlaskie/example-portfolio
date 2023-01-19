@@ -39,7 +39,7 @@ export default function Nav({ logo }) {
       </div>
 
       {/* mobile nav */}
-      <div onClick={handleNavOpen}>
+      <div onClick={handleNavOpen} className={norican.className}>
         <nav
           className={
             navOpen
@@ -53,7 +53,7 @@ export default function Nav({ logo }) {
           >
             <button className={inter.className}>X</button>
           </div>
-          <ul className="grid grid-flow-row justify-items-center text-3xl md:text-4xl gap-y-6">
+          <ul className="grid grid-flow-row justify-items-center text-3xl md:text-5xl gap-y-8 md:gap-y-10">
             <li className="justify-self-start hover:underline underline-offset-8 decoration-2  decoration-neutral-200/90 ">
               <Link href="/">Home</Link>
             </li>
@@ -68,25 +68,27 @@ export default function Nav({ logo }) {
       </div>
 
       {/* desktop nav */}
-      <nav className="hidden lg:grid ">
-        <ul
-          className="
-          grid grid-flow-col justify-items-center  text-3xl gap-x-16 items-center mr-10  mt-4"
-        >
-          <li
+      <div className={norican.className}>
+        <nav className="hidden lg:grid">
+          <ul
             className="
-            hover:underline underline-offset-8 decoration-2 decoration-neutral-200/90"
+          grid grid-flow-col justify-items-center  text-4xl gap-x-16 items-center mr-10 mt-8"
           >
-            <Link href="#my-projects">Projects</Link>
-          </li>
-          <li
-            className="
+            <li
+              className="
             hover:underline underline-offset-8 decoration-2 decoration-neutral-200/90"
-          >
-            <Link href="#contact-me">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+            >
+              <Link href="#my-projects">Projects</Link>
+            </li>
+            <li
+              className="
+            hover:underline underline-offset-8 decoration-2 decoration-neutral-200/90"
+            >
+              <Link href="#contact-me">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }
