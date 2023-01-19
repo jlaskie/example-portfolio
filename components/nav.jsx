@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { Norican } from "@next/font/google";
 import { useState } from "react";
 const norican = Norican({
@@ -7,6 +8,7 @@ const norican = Norican({
   subsets: ["latin"],
   fallback: ["brush script m7"],
 });
+
 import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"], fallback: ["arial"] });
 
@@ -18,7 +20,7 @@ export default function Nav({ logo }) {
   };
   return (
     <div className="flex justify-between lg:bg-gradient-to-r from-[#080344]/50 via-[#0E0946]/50 to-[#080344]/50 lg:backdrop-blur-md lg:border-b-[0.025rem] lg:border-b-neutral-200/5 lg:fixed lg:min-w-full lg:top-0 ">
-      <div className=" ml-6 mt-4 lg:mt-8">
+      <div className="ml-6 mt-4 lg:mt-8">
         <div className={norican.className}>
           <h1 className="bg-gradient-to-r from-aqua to-lavender inline-block text-transparent bg-clip-text pb-4">
             <Link href="/">{logo}</Link>
@@ -28,13 +30,14 @@ export default function Nav({ logo }) {
       <div onClick={handleNavOpen} className=" fixed right-0 mr-6 mt-4">
         <button>
           <Image
-            className=" lg:hidden"
+            className="lg:hidden"
             src="/assets/Menu-Icon.svg"
             height={60}
             width={60}
           />
         </button>
       </div>
+
       {/* mobile nav */}
       <div onClick={handleNavOpen}>
         <nav
@@ -63,8 +66,8 @@ export default function Nav({ logo }) {
           </ul>
         </nav>
       </div>
-      {/* desktop nav */}
 
+      {/* desktop nav */}
       <nav className="hidden lg:grid ">
         <ul
           className="
