@@ -40,7 +40,7 @@ export default function About({
           <Image src={mobileAvatar} alt="circular avatar of a woman smiling" />
         </div>
 
-        {/*Decrease font-size and increase padding and decrease max-width to change text placement*/} 
+        {/*Decrease font-size and increase padding and decrease max-width to change text placement*/}
         <h1
           className="text-[2.4rem] max-w-xxs pb-3.5 leading-[2.8rem] 
       md:max-w-md
@@ -54,11 +54,11 @@ export default function About({
       bg-gradient-to-r from-aqua to-lavender w-72 text-center text-2xl p-[0.18rem] rounded-md mb-11 mt-4
       md:w-[28rem] lg:ml-8 hover:scale-110 transition ease-in-out delay-200 "
         >
-          <div className="bg-gradient-to-r from-[#080344] via-[#0E0946] to-[#080344] p-4 rounded-md lg:text-3xl hover:scale-100 ">
-            <Link href="#contact-me">
+          <Link href="#contact-me">
+            <div className="bg-gradient-to-r from-[#080344] via-[#0E0946] to-[#080344] p-4 rounded-md lg:text-3xl hover:scale-100 hover:cursor-pointer">
               <button>{callToActionButton}</button>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="hidden lg:grid lg:my-10 lg:justify-self-start">
