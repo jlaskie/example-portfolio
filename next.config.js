@@ -19,10 +19,10 @@ module.exports = {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com;
-    child-src *.youtube.com *.google.com *.twitter.com;
-    style-src 'self' 'unsafe-inline' *.googleapis.com;
-    img-src * blob: data:;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com;
+    child-src *.youtube.com *.google.com;
+    style-src 'self' 'unsafe-inline' ;
+    img-src 'self';
     media-src 'none';
     connect-src *;
     font-src 'self';
@@ -35,9 +35,10 @@ const securityHeaders = [
     value: ContentSecurityPolicy.replace(/\n/g, '')
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+  // https://scotthelme.co.uk/a-new-security-header-referrer-policy/
   {
     key: 'Referrer-Policy',
-    value: 'origin-when-cross-origin'
+    value: 'strict-origin-when-cross-origin'
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {
@@ -65,33 +66,5 @@ const securityHeaders = [
     value: 'camera=(), microphone=(), geolocation=()'
   }
 ];
-//const securityHeaders = []
-/*
-module.exports = {
-  async headers() {
-    return [
-      {
-        // Apply these headers to all routes in your application.
-        source: '/:path*',
-        headers: [{
-  key: 'X-DNS-Prefetch-Control',
-  value: 'on'
-}, {
-  key: 'X-Frame-Options',
-  value: 'SAMEORIGIN'
-}
-// delete all of the above and copy what leerob.io did on github
-// also try to load next fonts in here
-]
-      },
-    ]
-  },
-}*/
-
-// use x-content type, content-security-policy (self and youtube probably since your content is coming from youtube, probably fonts too,), xframe options - sameorigin, http strict transport?, permissions policy deny for all, referrer policy is needed-origin when cross origin
-
 
 module.exports = nextConfig
-
-
-// imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
