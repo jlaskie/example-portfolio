@@ -34,6 +34,7 @@ export default function Nav({ logo }) {
             src="/assets/Menu-Icon.svg"
             height={60}
             width={60}
+            alt="menu icon"
           />
         </button>
       </div>

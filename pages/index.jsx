@@ -37,6 +37,7 @@ export default function Home() {
                   alt="image of a celebration"
                   height={597}
                   width={701}
+                  priority
                 />
               </div>
               <div>
@@ -93,6 +94,7 @@ export default function Home() {
                 // frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
               ></iframe>
             </div>
           </section>
