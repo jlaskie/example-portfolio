@@ -24,9 +24,6 @@
     h1 {
         @apply text-6xl
     }
-    h4 {
-        @apply text-2xl
-    }
     p {
         @apply text-3xl
     }
