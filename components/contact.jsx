@@ -13,6 +13,7 @@ const norican = Norican({
   fallback: ["brush script m7"],
 });
 
+// all social media icons and links
 const SocialMedia = () => {
   return (
     <div className="grid grid-rows-3 gap-9 lg:mt-24">
@@ -45,6 +46,8 @@ export default function Contact({title, firstPara, secondPara, email}) {
     <div className="lg:grid lg:grid-cols-2 lg:justify-items-end lg:gap-x-3 lg:items-center">
       <div className="grid grid-flow-row justify-center mb-8 lg:justify-self-end lg:mb-0">
         <div className="max-w-md grid justify-items-center">
+
+          {/* Contact title */}
           <div className="max-w-[12rem]">
             <div className={norican.className}>
               <h1 className="pb-4 text-6xl bg-gradient-to-r from-aqua to-lavender inline-block text-transparent bg-clip-text lg:text-7xl">
@@ -52,6 +55,8 @@ export default function Contact({title, firstPara, secondPara, email}) {
               </h1>
             </div>
           </div>
+
+          {/* text box */}
           <div className="grid grid-rows-1 border-cyan-300/90 rounded-lg border-2 lg:w-full">
             <p className="  text-2xl my-6 ml-8 mr-5 lg:text-3xl lg:leading-normal">
               {firstPara} <br /> {secondPara} <span className="text-cyan-300"> {email}</span>
@@ -59,6 +64,8 @@ export default function Contact({title, firstPara, secondPara, email}) {
           </div>
         </div>
       </div>
+
+      {/* Social media icons with image */}
       <div className=" lg:max-w-xl lg:justify-self-start">
         <div className="flex justify-center gap-10 lg:gap-5">
           <div className="self-center">
