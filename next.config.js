@@ -17,7 +17,7 @@ module.exports = {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *vitals.vercel-insights.com;
     child-src *.youtube.com *.google.com;
     style-src 'self' 'unsafe-inline' ;
     img-src 'self';
