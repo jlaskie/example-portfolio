@@ -121,7 +121,7 @@ export default function Home() {
                 loading="lazy"
                 aria-label="background image of an auditorium filled with business people"
               >
-                {/* project 3 text */}
+                {/* project 3 text and black overlay to make text stand out */}
                 <div className="bg-black rounded-[1rem] px-6 bg-opacity-[55%] py-20 lg:rounded-sm">
                   <div className="grid grid-flow-row justify-items-center">
                     <Projects
