@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Example Portfolio</title>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="jlaskie" />
         <meta name="description" content="Example of an online portfolio." />
         <meta
           name="robots"
