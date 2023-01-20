@@ -36,6 +36,8 @@ export default function About({
             </h1>
           </div>
         </>
+
+        {/* only displays this circular avatar on mobile */}
         <div className="py-7 justify-self-center lg:hidden">
           <Image src={mobileAvatar} alt="circular avatar of a woman smiling" />
         </div>
@@ -61,6 +63,8 @@ export default function About({
           </Link>
         </div>
       </div>
+
+      {/* only displays this square avatar on large screens */}
       <div className="hidden lg:grid lg:my-10 lg:justify-self-start">
         <Image
           src={desktopAvatar}

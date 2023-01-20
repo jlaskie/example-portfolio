@@ -19,9 +19,10 @@ export default function Home() {
           <About
             welcome="Hello, I am"
             name="Your Name"
-            // avatar
+            // mobile avatar
             introduction="I enjoy creating amazing experiences for people"
             callToActionButton="Get In Touch"
+            // desktop avatar
           />
         </section>
         <section className="projects" id="my-projects">
@@ -30,7 +31,8 @@ export default function Home() {
               className="md:mt-20 lg:grid lg:grid-cols-2 lg:justify-items-end lg:gap-x-6 lg:items-center
             "
             >
-              <div className=" grid justify-center lg:order-last lg:justify-self-start">
+              {/* project 1 image */}
+              <div className="grid justify-center lg:order-last lg:justify-self-start">
                 <Image
                   className="lg:max-w-[36rem]"
                   src="/images/projects-img/big-unsplash-party.png"
@@ -41,11 +43,15 @@ export default function Home() {
                 />
               </div>
               <div>
+
+                {/* project 1 text */}
                 <Projects
                   title="Project 1"
                   date="June 2022"
                   info="Lorem ipsum dolor sit amet consectetur. A posuere in senectus urna diam egestas nisl est malesuada. Ultricies faucibus placerat consequat nisl sapien sem ipsum arcu."
                 />
+
+                {/* more project 1 images */}
                 <div className="grid grid-rows-1 justify-items-center mb-11 ">
                   <div className="grid grid-cols-2 max-w-xxs gap-x-3 md:max-w-xl  lg:pl-6 ">
                     <Image
@@ -69,6 +75,8 @@ export default function Home() {
           </section>
           <section className="project-two">
             <div className="grid justify-center md:mt-20  lg:grid-cols-2 lg:justify-items-end lg:gap-x-6 lg:items-center lg:mb-40 lg:mt-40">
+
+              {/* project 2 image */}
               <div className="lg:order-last  lg:justify-self-start">
                 <Image
                   className="lg:max-w-[36rem]"
@@ -78,6 +86,8 @@ export default function Home() {
                   width={579}
                 />
               </div>
+
+              {/* project 2 text */}
               <div className="lg:justify-self-start">
                 <Projects
                   title="Project 2"
@@ -85,6 +95,8 @@ export default function Home() {
                   info="Lorem ipsum dolor sit amet consectetur. Ultricies faucibus placerat consequat nisl sapien sem ipsum arcu."
                 />
               </div>
+
+              {/* project 2 video */}
               <iframe
                 className="w-full lg:max-w-xl lg:h-[100%] lg:row-span-2 lg:pl-6 lg:order-first"
                 width="560"
@@ -100,11 +112,16 @@ export default function Home() {
           </section>
           <section className="project-three">
             <div className="md:mt-20 md:mb-20 md lg:grid lg:grid-cols-1 lg:mb-40">
+
+              {/** project 3 background image(s)
+               * background image.png was left as support for older browsers which don't display the image.webp
+               */}
               <div
                 className="bg-[url('/images/projects-img/big-pexels-conference-image.webp')] bg-[url('/images/projects-img/big-pexels-conference-image.png')]  bg-center grid grid-cols-1 mt-11 mb-11 md:h-[49.25rem] lg:w-[72rem] lg:ml-6 lg:justify-self-center lg:rounded-md"
                 loading="lazy"
                 aria-label="background image of an auditorium filled with business people"
               >
+                {/* project 3 text */}
                 <div className="bg-black rounded-[1rem] px-6 bg-opacity-[55%] py-20 lg:rounded-sm">
                   <div className="grid grid-flow-row justify-items-center">
                     <Projects
