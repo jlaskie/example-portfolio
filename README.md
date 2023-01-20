@@ -10,8 +10,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Tailwind CSS for styling
 
 ## Deployment :zap:
-- Deployed using Vercel
+- Deployed on Vercel
+- Vercel for analytics
+- https://example-portfolio-template.vercel.app/
 
-https://example-portfolio-template.vercel.app/
-
-
+![example-portfolio-screenshot](https://user-images.githubusercontent.com/115713394/213791000-483d129a-bf0e-4893-9558-bfadeb1d7646.png)
