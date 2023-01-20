@@ -103,7 +103,7 @@ export default function Home() {
               <div
                 className="bg-[url('/images/projects-img/big-pexels-conference-image.webp')] bg-[url('/images/projects-img/big-pexels-conference-image.png')]  bg-center grid grid-cols-1 mt-11 mb-11 md:h-[49.25rem] lg:w-[72rem] lg:ml-6 lg:justify-self-center lg:rounded-md"
                 loading="lazy"
-                aria-label="background image of an audotorium filled with business people"
+                aria-label="background image of an auditorium filled with business people"
               >
                 <div className="bg-black rounded-[1rem] px-6 bg-opacity-[55%] py-20 lg:rounded-sm">
                   <div className="grid grid-flow-row justify-items-center">
