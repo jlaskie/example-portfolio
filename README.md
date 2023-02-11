@@ -1,7 +1,7 @@
 
 ## Example Portfolio Template :sparkles:
 
-I wanted to create a template that I could potentially use for creating portfolio sites. Essentially it's an example portfolio! 
+I wanted to create a template that I could use for creating portfolio sites. Essentially it's an example portfolio! 
 Some of the images already have the gradient borders around them which I added in Figma instead of doing it via Tailwind
 
 ## Frameworks :hammer:
