@@ -43,7 +43,6 @@ export default function Home() {
                 />
               </div>
               <div>
-
                 {/* project 1 text */}
                 <Projects
                   title="Project 1"
@@ -75,7 +74,6 @@ export default function Home() {
           </section>
           <section className="project-two">
             <div className="grid justify-center md:mt-20  lg:grid-cols-2 lg:justify-items-end lg:gap-x-6 lg:items-center lg:mb-40 lg:mt-40">
-
               {/* project 2 image */}
               <div className="lg:order-last  lg:justify-self-start">
                 <Image
@@ -98,21 +96,21 @@ export default function Home() {
 
               {/* project 2 video */}
               <iframe
-                className="w-full lg:max-w-xl lg:h-[100%] lg:row-span-2 lg:pl-6 lg:order-first"
+              className="w-full lg:max-w-xl lg:h-[100%] lg:row-span-2 lg:pl-6 lg:order-first"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/OW_EmSfKAdA"
+                src="https://www.youtube.com/embed/__O1eATrXI0?si=hgeWL_Hc3Lp_EtiZ"
                 title="YouTube video player"
-                // frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
                 loading="lazy"
               ></iframe>
             </div>
           </section>
           <section className="project-three">
             <div className="md:mt-20 md:mb-20 md lg:grid lg:grid-cols-1 lg:mb-40">
-
               {/** project 3 background image(s)
                * background image.png was left as support for older browsers which don't display the image.webp
                */}
@@ -147,7 +145,7 @@ export default function Home() {
       <footer className={inter.className}>
         <h2 className="text-center mt-10 mb-4 text-xs">
           Copyright 2022 Your Name
-        </h2> 
+        </h2>
       </footer>
     </div>
   );
